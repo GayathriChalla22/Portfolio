@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primary-black:#000000;
+    --cool-black:#151922;
+    --primary-purple:#A1045A;
+    --font-large:50px;
+}
+.body_background{
+    background-color: var(--primary-black);
+}
+.nav{
+    background-color: var(--cool-black);
+    height: 10vh;
+}
+.home{
+    height: 100vh;
+}
+.font_large{
+    font-size: var(--font-large);
+}
+.color_primary_purple{
+    color: var(--primary-purple)
+}
