@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
 import { motion } from 'framer-motion';
+import Sparkle from 'react-sparkle'
 
 function Navbar() {
   const [currentSection, setCurrentSection] = useState(""); 
@@ -73,22 +74,22 @@ function Navbar() {
 
   return (
     <>
-      <ul className="nav nav-pills d-flex justify-content-end align-items-center gap-4 pe-5 sticky-top" id="nav">
+      <ul className="nav nav-pills d-flex justify-content-end align-items-center gap-4 pe-5 position-fixed top-0 overflow-hidden end-0 w-100 " id="nav">
+        <motion.li className="nav-item"  variants={tapVariants} whileTap="tap">
+        <a className={`nav-link text-decoration-none text-white ${currentSection === "about" ? "active" : ""}`} href="#about">About</a>
+        </motion.li>
         <motion.li className="nav-item"  whileTap={tapVariants.tap}>
-            <a className={`nav-link text-decoration-none text-white ${currentSection === "about" ? "active" : ""}`} href="#about">About</a>
-            </motion.li>
-          <motion.li className="nav-item"  whileTap={tapVariants.tap}>
-            <a className={`nav-link text-decoration-none text-white ${currentSection === "education" ? "active" : ""}`} href="#education">Education</a>
-          </motion.li>
-          <motion.li className="nav-item"  whileTap={tapVariants.tap}>
-            <a className={`nav-link text-decoration-none text-white ${currentSection === "skills" ? "active" : ""}`} href="#skills" >Skills</a>
-          </motion.li>
-          <motion.li className="nav-item"  whileTap={tapVariants.tap}>
-            <a className={`nav-link text-decoration-none text-white ${currentSection === "projects" ? "active" : ""}`} href="#projects" >Projects</a>
-          </motion.li>
-          <motion.li className="nav-item"  whileTap={tapVariants.tap}>
-            <a className={`nav-link text-decoration-none text-white ${currentSection === "contact" ? "active" : ""}`} href="#contact" >Contact</a>
-          </motion.li>
+        <a className={`nav-link text-decoration-none text-white ${currentSection === "education" ? "active" : ""}`} href="#education">Education</a>
+        </motion.li>
+        <motion.li className="nav-item"  whileTap={tapVariants.tap}>
+        <a className={`nav-link text-decoration-none text-white ${currentSection === "skills" ? "active" : ""}`} href="#skills" >Skills</a>
+        </motion.li>
+        <motion.li className="nav-item"  whileTap={tapVariants.tap}>
+        <a className={`nav-link text-decoration-none text-white ${currentSection === "projects" ? "active" : ""}`} href="#projects" >Projects</a>
+        </motion.li>
+        <motion.li className="nav-item"  whileTap={tapVariants.tap}>
+        <a className={`nav-link text-decoration-none text-white ${currentSection === "contact" ? "active" : ""}`} href="#contact" >Contact</a>
+        </motion.li>
       </ul>
     </>
   );

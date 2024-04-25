@@ -7,6 +7,7 @@
     --cool-black:#151922;
     --primary-purple:#A1045A;
     --font-large:50px;
+    overflow-x: hidden;
 }
 .body_background{
     background-color: var(--primary-black);
