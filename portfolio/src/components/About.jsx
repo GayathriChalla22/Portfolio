@@ -1,19 +1,21 @@
 import React from 'react'
 import '../App.css'
-import img1 from '../assets/img3.jpeg'
+import img1 from '../assets/img2.jpeg'
+import Sparkle from 'react-sparkle'
 
 function About() {
 
   return (
     <div className='remaining w-100 d-flex flex-column justify-content-center align-items-center' id="about">
       <div className="card main-card text-center">
-        <div className="card-body card-content d-flex flex-column justify-content-center align-items-center gap-5">
+      <Sparkle color={'#A1045A'} count={150} minSize={8} maxSize={13}/>
+        <div className="card-body card-content d-flex flex-column justify-content-center align-items-center">
           <h5 className="card-title title color_primary_purple font_xl">About Me</h5>
-          <p className="card-text font_small mt-3">Proficiency in Python. Have hands-on experience in HTML, CSS, JavaScript. Expertise
+          <p className="card-text-content font_small ">Proficiency in Python. Have hands-on experience in HTML, CSS, JavaScript. Expertise
                 in responsive and adaptive design ensures optimal user experiences across devices.
                 Ability to translate UI designs into functional code with accuracy and efficiency.
                 </p>
-          <a href="#" className="btn bg_primary_purple text-white fw-medium">Resume</a>
+          <a href="#" className="btn resume bg_primary_purple text-white fw-medium">Resume</a>
         </div>
       </div>
       <div className=" picture card d-flex justify-content-center align-items-center">
