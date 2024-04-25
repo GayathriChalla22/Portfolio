@@ -6,7 +6,10 @@
     --primary-black:#000000;
     --cool-black:#151922;
     --primary-purple:#A1045A;
-    --font-large:50px;
+    --font-large:70px;
+    --font-medium:34px;
+    --font-xl:54px;
+    --font-small:20px;
     overflow-x: hidden;
 }
 .body_background{
@@ -19,16 +22,93 @@
 .home{
     height: 90vh;
 }
+.remaining{
+    height:90vh;
+}
 .font_large{
     font-size: var(--font-large);
 }
+.font_medium{
+    font-size: var(--font-medium);
+}
+.font_small{
+    font-size: var(--font-small);
+}
+.font_xl{
+    font-size: var(--font-xl);
+}
 .color_primary_purple{
-    color: var(--primary-purple)
+    color: var(--primary-purple) !important;
+}
+.bg_primary_purple{
+    background-color: var(--primary-purple) !important;
 }
 .active{
     background-color:var(--primary-purple) !important;
     
 }
-/* .box-shadow{
-    box-shadow: 2px 2px 4px 2px gray;
-} */
+.text-shadow{
+    text-shadow: 2px 2px 4px  rgb(96, 96, 237);
+}
+.contact{
+    margin-bottom:200px;
+}
+.card{
+    width: 300px;
+}
+.card-card-img-top{
+    width: 280px;
+    height: 250px;
+}
+.picture{
+    background-color: var(--primary-black) !important;
+    color: white !important;
+    box-shadow: -2px -2px 5px 1px gray;
+    position: relative;
+    left: -30%;
+    top: -35%;
+}
+.main-card{
+    position: absolute;
+    left:5%;
+    top: 45%;
+    width: 65%;
+    border: none !important;
+    box-shadow: 1px 1px 8px 2px gray !important;
+}
+.card-content{
+    height: 550px;
+    background-color: var(--cool-black);
+    color: white !important;
+    padding: 0 11rem !important;
+
+}
+.title::before{
+    /* content: "";
+    width: 200px ;
+    height: 60px ;
+    border-top: 4px solid #A1045A;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    border-radius: 50%;
+    margin-top: 10px; */
+    content: "";
+    width: 90px  ;
+    height: 2px  ;
+    border-top: 2px solid #A1045A ;
+    position: absolute ;
+    top: 30% ;
+    left: 45% ;
+    margin-top: 20px;
+}
+.title::after{
+    content: "" ;
+    width: 90px  ;
+    height: 2px  ;
+    border-top: 2px solid #A1045A ;
+    position: absolute ;
+    top: 32% ;
+    left: 48% ;
+    margin-top: 20px ;
+}
