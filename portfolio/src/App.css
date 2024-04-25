@@ -12,11 +12,11 @@
     background-color: var(--primary-black);
 }
 .nav{
-    background-color: var(--cool-black);
+    background-color: var(--primary-black);
     height: 10vh;
 }
 .home{
-    height: 100vh;
+    height: 90vh;
 }
 .font_large{
     font-size: var(--font-large);
@@ -24,3 +24,10 @@
 .color_primary_purple{
     color: var(--primary-purple)
 }
+.active{
+    background-color:var(--primary-purple) !important;
+    
+}
+/* .box-shadow{
+    box-shadow: 2px 2px 4px 2px gray;
+} */
