@@ -7,6 +7,7 @@ import Home from './components/Home'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Navbar from './components/Navbar'
+import EducationModal from './components/EducationModal'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <Education/>
       <Skills/>
       <Projects/>
+      <EducationModal/>
       <Contact/>
     </main>
   )

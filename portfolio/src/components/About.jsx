@@ -1,6 +1,6 @@
 import React from 'react'
 import '../App.css'
-import img1 from '../assets/img2.jpeg'
+import img1 from '../assets/img6.jpeg'
 import Sparkle from 'react-sparkle'
 
 function About() {
@@ -8,7 +8,7 @@ function About() {
   return (
     <div className='remaining w-100 d-flex flex-column justify-content-center align-items-center' id="about">
       <div className="card main-card text-center">
-      <Sparkle color={'#A1045A'} count={150} minSize={8} maxSize={13}/>
+      <Sparkle color={'#A1045A'} count={100} minSize={5} maxSize={8}/>
         <div className="card-body card-content d-flex flex-column justify-content-center align-items-center">
           <h5 className="card-title title color_primary_purple font_xl">About Me</h5>
           <p className="card-text-content font_small ">Proficiency in Python. Have hands-on experience in HTML, CSS, JavaScript. Expertise
